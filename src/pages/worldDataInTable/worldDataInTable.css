@@ -1,0 +1,6 @@
+.spinnerContainer{
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

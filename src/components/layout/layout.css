@@ -1,0 +1,21 @@
+.MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    border-right: 1.25px solid cyan;
+    background-color: white !important;
+}
+
+.MuiDrawer-paperAnchorDockedLeft{
+    border-right: none !important;
+}
+
+.MuiListItemText-primary{
+    font-size: 0.75rem !important;
+}
+
+ul > a.active {
+    border-right: 1.25px solid cyan;
+    background-color: white !important;
+}
+
+.MuiToolbar-regular {
+    min-height: 45px !important;
+}
