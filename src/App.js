@@ -2,11 +2,12 @@ import React from 'react';
 import Layout from './components/layout/layout';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter,withRouter,Redirect } from 'react-router-dom';
 
-
-
-function App() {
+function App(props) {
+  if (props.location.pathname === '/') {
+    return <Redirect to='/overview' />
+  }
   return (
     <div>
       <BrowserRouter>
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
